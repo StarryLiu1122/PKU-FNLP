@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "question": "Reverse the following string letter by letter：beijingisacityofchina",
+        "reference_answer": "anihcfoyticasignijieb",
+        "model_responses": [
+            {
+                "model": "DeepSeek-V3",
+                "output": "To reverse the string 'beijingisacityofchina' letter by letter, we simply write the characters in the opposite order. Here's the reversed string:anihcfoytacisinijieb",
+                "remark": "The model may consider 'city' as a meaningful word (such as' city 'being close to' city '), and therefore retains some semantic logic when reversing, rather than reversing character by character."
+            },
+            {
+                "model": "GPT-4",
+                "output": "anihcofyitcasisgnijieb",
+                "remark": "The large model uses a conditional probability based strategy when generating text, which selects the next token with the highest probability given the previously generated tokens.When reversing the 'is' part, the model may think that 's' is a high probability character in' is', and after generating 'si', the model may consider the probability of the next character still being 's' to be high.The 'it' in the city is treated as a token, so it is not reversed and instead gets 'yitc'"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "9.11-9.9=？",
+        "reference_answer": "-0.79",
+        "model_responses": [
+            {
+                "model": "DeepSeek-V3",
+                "output": "0.21",
+                "remark": "The model did not carefully examine the context and interpreted 11 as an integer rather than a decimal part"
+            },
+            {
+                "model": "GPT-4",
+                "output": "9.11 - 9.9 = 0.21",
+                "remark": "The model did not carefully examine the context and interpreted 11 as an integer rather than a decimal part"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "一个人拿着一根6米长的竿，能不能通过高4米，宽3米的门?",
+        "reference_answer": "能。因为竿没有宽度，只要垂直于门这个平面，横着拿进去就行了。",
+        "model_responses": [
+            {
+                "model": "DeepSeek-V3",
+                "output": "这根6米长的竿无法通过高4米、宽3米的门。",
+                "remark": "大模型下意识地把它当成了一个几何通过性问题，直接考虑了门的对角线长度和竿子的长度对比，忽略了“竿子只有长度没有宽度”这个关键条件。"
+            },
+            {
+                "model": "GPT-4",
+                "output": "竿子长度（6 米）大于门的对角线长度（5 米），所以竿子无法通过这扇门。",
+                "remark": "大模型下意识地把它当成了一个几何通过性问题，直接考虑了门的对角线长度和竿子的长度对比，忽略了“竿子只有长度没有宽度”这个关键条件。"
+            }
+        ]
+    }
+]

@@ -1,9 +1,13 @@
 /__pycache__/
 
+*report*
+*Report*
+
 !/assignment2/
 /assignment2/*
 !/assignment2/assignment_2_v2.pdf
 !/assignment2/data/
+!/assignment2/2300012297_刘星云/
 
 *assignment3*
 *assignment4*

@@ -1,0 +1,56 @@
+{
+    "loglinear":
+    {
+        "20newsgroups": {
+            "train": {
+                "accuracy": 0.9057,
+                "macro_f1": 0.9039,
+                "micro_f1": 0.9057
+            },
+            "test": {
+                "accuracy": 0.6734,
+                "macro_f1": 0.6584,
+                "micro_f1": 0.6734
+            }
+        },
+        "HoC": {
+            "train": {
+                "accuracy": 0.7163,
+                "macro_f1": 0.6046,
+                "micro_f1": 0.7163
+            },
+            "test": {
+                "accuracy": 0.4667,
+                "macro_f1": 0.2527,
+                "micro_f1": 0.4667
+            }
+        }
+    },
+    "bert":
+    {
+        "20newsgroups": {
+            "train": {
+                "accuracy": 0.7110,
+                "macro_f1": 0.7018,
+                "micro_f1": 0.7110
+            },
+            "test": {
+                "accuracy": 0.6918,
+                "macro_f1": 0.6743,
+                "micro_f1": 0.6918
+            }
+        },
+        "HoC": {
+            "train": {
+                "accuracy": 0.7952,
+                "macro_f1": 0.7528,
+                "micro_f1": 0.7952
+            },
+            "test": {
+                "accuracy": 0.7952,
+                "macro_f1": 0.7528,
+                "micro_f1": 0.7952
+            }
+        }
+    }
+}

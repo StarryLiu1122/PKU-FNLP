@@ -1,0 +1,2384 @@
+[
+    {
+        "grammar_description": "在壮语中，单词“dwg”是系动词。在表示肯定判断的简单句中，“dwg”一般省略。然而，在表示否定时，“dwg”不可省略，且否定词“mbouj”需置于系动词“dwg”之前。",
+        "examples": [
+            {
+                "za": "De daxboh gou.",
+                "zh": "他是我的父亲。",
+                "related_words": {
+                    "de": "他",
+                    "daxboh": "父亲",
+                    "gou": "我"
+                }
+            },
+            {
+                "za": "De mbouj dwg daxboh gou.",
+                "zh": "他不是我的父亲。",
+                "related_words": {
+                    "de": "他",
+                    "daxboh": "父亲",
+                    "gou": "我"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中指代人的名词或代词在表示复数时，需通过在单数词前添加集体量词“gyoengq”（群）以构成对应的复数形式。",
+        "examples": [
+            {
+                "za": "gyoengq de",
+                "zh": "他们/她们/它们",
+                "related_words": {
+                    "de": "他/她/它"
+                }
+            },
+            {
+                "za": "gyoengq gou",
+                "zh": "我们",
+                "related_words": {
+                    "gou": "我"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮文中存在复合词，例如“名词＋指示代词”组成的词，此类复合词之间不能加空格，需要连写。",
+        "examples": [
+            {
+                "za": "ngoenzneix",
+                "zh": "今天",
+                "related_words": {
+                    "ngoenz": "日",
+                    "neix": "这"
+                }
+            },
+            {
+                "za": "bineix",
+                "zh": "今年",
+                "related_words": {
+                    "bi": "年",
+                    "neix": "这"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的单音节量词能够重叠，额外表示“每一”的含义。",
+        "examples": [
+            {
+                "za": "duzduz",
+                "zh": "每只",
+                "related_words": {
+                    "duz": "只"
+                }
+            },
+            {
+                "za": "mbawmbaw",
+                "zh": "每张",
+                "related_words": {
+                    "mbaw": "张"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，当需要强调数量为“一”时，使用单词“ndeu”，并且要将“ndeu”置于“量词＋名词”结构之后。",
+        "examples": [
+            {
+                "za": "Gou cawx bonj saw ndeu.",
+                "zh": "我买了一本书。",
+                "related_words": {
+                    "gou": "我",
+                    "cawx": "买",
+                    "bonj": "本",
+                    "saw": "书"
+                }
+            },
+            {
+                "za": "Raeuz haetneix miz dangz go ndeu.",
+                "zh": "我们今早有一堂课。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "haetneix": "今早",
+                    "miz": "有",
+                    "dangz": "堂",
+                    "go": "课"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语时间名词的表达具有一定规律性，通过加入特定后缀可以表示特定某天的时间。后缀 -bonz、-lwenz、-neix、-cog、-rawz 分别表示“前天”、“昨天”、“今天”、“明天”和“后天”的时间。",
+        "examples": [
+            {
+                "za": "ngoenzbonz",
+                "zh": "前天",
+                "related_words": {
+                    "ngoenz": "天"
+                }
+            },
+            {
+                "za": "haemhbonz",
+                "zh": "前天晚上",
+                "related_words": {
+                    "haemh": "晚上"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“yaep ndeu” 意为“一会儿，一下”，在口语中使用频率较高，用来表示时间的短暂性，需要放在句尾。",
+        "examples": [
+            {
+                "za": "naengh yaep ndeu",
+                "zh": "坐一会儿",
+                "related_words": {
+                    "naengh": "坐"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "当表示领属关系时，壮语量词应该直接放在人称代词之前，且应该省略判断词 “dwg”（“是”）。",
+        "examples": [
+            {
+                "za": "Aen neix aen gou.",
+                "zh": "这个是我的。",
+                "related_words": {
+                    "aen": "个",
+                    "neix": "这",
+                    "gou": "我"
+                }
+            },
+            {
+                "za": "Gonjbit haenx gonj de.",
+                "zh": "那支笔是他的。",
+                "related_words": {
+                    "gonjbit": "支笔",
+                    "haenx": "那",
+                    "gonj": "支",
+                    "de": "他"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“nw”用在叙述句末尾，起到强调自己所说内容的作用，用以征求对方的允许或提醒对方注意，类似于汉语中的“……啊”。",
+        "examples": [
+            {
+                "za": "Gou ma ranz lo nw.",
+                "zh": "我回家了啊。",
+                "related_words": {
+                    "gou": "我",
+                    "ma": "回来",
+                    "ranz": "家",
+                    "lo": "了"
+                }
+            },
+            {
+                "za": "Gou laeng de ciq bonjsaw ndeu nw.",
+                "zh": "我向他借了本书啊。",
+                "related_words": {
+                    "gou": "我",
+                    "laeng": "向",
+                    "de": "他",
+                    "ciq": "借",
+                    "bonjsaw": "本书",
+                    "ndeu": "一"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中的单音节动词通常可以通过重叠来表示动作的“短暂性”——即“一下”。此外，当表示“尝试性”时，还需在重叠形式后加上“yawj”（看）。",
+        "examples": [
+            {
+                "za": "daenjdaenj",
+                "zh": "穿一下",
+                "related_words": {
+                    "daenj": "穿"
+                }
+            },
+            {
+                "za": "byaijbyaij",
+                "zh": "走一下（散步）",
+                "related_words": {
+                    "byaij": "走"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "当名词的数量为“一”时，壮语中的量词可以单独作为主语或宾语使用，且不需要与表示“一”的数词 it 或 ndeu 搭配。联系上下文，两个量词之间的动词可以省略。",
+        "examples": [
+            {
+                "za": "Duz song liengx naek.",
+                "zh": "一只（有）二两重。",
+                "related_words": {
+                    "duz": "只",
+                    "song": "二",
+                    "liengx": "两",
+                    "naek": "重"
+                }
+            },
+            {
+                "za": "Gumz go.",
+                "zh": "一坑一棵。",
+                "related_words": {
+                    "gumz": "坑",
+                    "go": "棵"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语形容词本身可以重叠形成一个新词（即“AA式重叠”），且在其后加上另一个词“bae”以表示语义的加重，进一步增强形容效果。",
+        "examples": [
+            {
+                "za": "ronghrongh bae",
+                "zh": "亮亮的",
+                "related_words": {
+                    "rongh": "亮"
+                }
+            },
+            {
+                "za": "ndatndat bae",
+                "zh": "烫烫的",
+                "related_words": {
+                    "ndat": "热"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语形容词通过在词尾添加叠音音节（即重复形容词的最后一个音节）形成 ABB 式结构，以表示程度的加深。",
+        "examples": [
+            {
+                "za": "ndaemndatndat",
+                "zh": "⿊漆漆的",
+                "related_words": {
+                    "ndaem": "⿊",
+                    "ndaemndat": "很⿊"
+                }
+            },
+            {
+                "za": "hoengzfwgfwg",
+                "zh": "深红深红的",
+                "related_words": {
+                    "hoengz": "红",
+                    "hoengzfwg": "很红"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语词汇“dwk”作为方式助词，相当于“着”，表示动作在进行或状态在持续。“dwk”之前的词或短语往往是动词性的。",
+        "examples": [
+            {
+                "za": "Raeuz naengh dwk caj mwngz.",
+                "zh": "我们坐着等候你。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "naengh": "坐",
+                    "caj": "等候",
+                    "mwngz": "你"
+                }
+            },
+            {
+                "za": "Dahnuengx daej dwk lwnh gou nyi.",
+                "zh": "妹妹哭着讲给我听。",
+                "related_words": {
+                    "dahnuengx": "妹妹",
+                    "daej": "哭",
+                    "lwnh": "告诉",
+                    "gou": "我",
+                    "nyi": "听"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "对于两个意义相对的方位词，可以在他们之间加上mbouj（“不”），表示事物所在位置不便于用具体的方位词来确定。",
+        "examples": [
+            {
+                "za": "gwnz mbouj laj",
+                "zh": "不上不下的",
+                "related_words": {
+                    "gwnz": "上",
+                    "laj": "下"
+                }
+            },
+            {
+                "za": "gyang mbouj henz",
+                "zh": "既非中心也非旁边",
+                "related_words": {
+                    "gyang": "中心",
+                    "henz": "旁边"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的单纯方位词有AA式的重叠形式，表示动作发展的最高程度。",
+        "examples": [
+            {
+                "za": "Hwnj gwnzgwnz bae.",
+                "zh": "到最高一层去。",
+                "related_words": {
+                    "hwnj": "上",
+                    "gwnz": "上",
+                    "bae": "去"
+                }
+            },
+            {
+                "za": "Haeuj ndawndaw bae.",
+                "zh": "进最里头去。",
+                "related_words": {
+                    "haeuj": "进",
+                    "ndaw": "里头",
+                    "bae": "去"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的单纯方位词有AABB式的重叠形式，表示遍及各处的含义。",
+        "examples": [
+            {
+                "za": "gwnzgwnz lajlaj",
+                "zh": "上上下下",
+                "related_words": {
+                    "gwnz": "上",
+                    "laj": "下"
+                }
+            },
+            {
+                "za": "ndawndaw rogrog",
+                "zh": "里里外外",
+                "related_words": {
+                    "ndaw": "里",
+                    "rog": "外"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，baih是表示方位的前缀，可以跟一些名词组合，表示方位。",
+        "examples": [
+            {
+                "za": "baihdoeng",
+                "zh": "东边",
+                "related_words": {
+                    "doeng": "东"
+                }
+            },
+            {
+                "za": "baihnamz",
+                "zh": "南边",
+                "related_words": {
+                    "namz": "南"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "gag“自己”是壮语中的反身代词。一般与人称代词同时使用，位于人称代词之后。其格式一般是：“人称代词＋反身代词＋动词短语”。",
+        "examples": [
+            {
+                "za": "Gou gag bae gwn haeux.",
+                "zh": "我自己去吃饭。",
+                "related_words": {
+                    "gou": "我",
+                    "bae": "去",
+                    "gwn": "吃",
+                    "haeux": "饭"
+                }
+            },
+            {
+                "za": "Raeuz gag bae gwn haeux.",
+                "zh": "我们自己去吃饭。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "bae": "去",
+                    "gwn": "吃",
+                    "haeux": "饭"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "gonq“先，前”是个副词，表示对动作行为先后的选择。从语法结构上讲，gonq都必须远离主要动词，放到句子末尾。",
+        "examples": [
+            {
+                "za": "Daengj gou aeu vanj aeu dawh gonq.",
+                "zh": "”等我先拿好碗和筷子。",
+                "related_words": {
+                    "daengj": "等",
+                    "gou": "我",
+                    "aeu": "拿",
+                    "vanj": "碗",
+                    "dawh": "筷子"
+                }
+            },
+            {
+                "za": "Raeuz bae gwn haeux gonq.",
+                "zh": "我们先去吃饭。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "bae": "去",
+                    "gwn": "吃",
+                    "haeux": "饭"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "naengz本身无实际意义，但附加在一些时间名词或动量词之后，便含有“每”“全部”“往常”的意思。",
+        "examples": [
+            {
+                "za": "ngoenznaengz",
+                "zh": "每天",
+                "related_words": {
+                    "ngoenz": "天"
+                }
+            },
+            {
+                "za": "binaengz",
+                "zh": "每年",
+                "related_words": {
+                    "bi": "年"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "ndaek常常被放在相关量词前面，对所描述的对象表达夸张、赞美、惊讶等褒义的语气。",
+        "examples": [
+            {
+                "za": "Ndaek duz vaiz ndeu.",
+                "zh": "好壮的一头牛。",
+                "related_words": {
+                    "duz": "头 [动物的量词]",
+                    "vaiz": "牛",
+                    "ndeu": "一"
+                }
+            },
+            {
+                "za": "Ndaek ngauq rin ndeu.",
+                "zh": "好大的一块石头。",
+                "related_words": {
+                    "ngauq": "块",
+                    "rin": "石头",
+                    "ndeu": "一"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "gij放在名词、指示代词之前，是一个不定量词，相当于“一些，一部分”的意思，表示对一类事物的多数集合体的概括",
+        "examples": [
+            {
+                "za": "gij haenx",
+                "zh": "那些",
+                "related_words": {
+                    "haenx": "那"
+                }
+            },
+            {
+                "za": "gij neix",
+                "zh": "这些",
+                "related_words": {
+                    "neix": "这"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "gij放在动词前，起到将该动词名物化的作用，即动词被弱化成为泛化名词，可以充当主语和宾语成分，相当千汉语的“的”字结构。",
+        "examples": [
+            {
+                "za": "gij gwn",
+                "zh": "吃的东西",
+                "related_words": {
+                    "gwn": "吃"
+                }
+            },
+            {
+                "za": "gij daenj",
+                "zh": "穿的衣服",
+                "related_words": {
+                    "daenj": "穿"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "gij放在人称代词前，表示领属关系。",
+        "examples": [
+            {
+                "za": "gij gou",
+                "zh": "我的东西",
+                "related_words": {
+                    "gou": "我"
+                }
+            },
+            {
+                "za": "gij raeuz",
+                "zh": "我们的东西",
+                "related_words": {
+                    "raeuz": "我们"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“…… mbouj caengz?”是疑问语气词，表示“……了吗”“……了没有？”，是对某个预定的或估计要发生的事情，目前是否已经发生的提问。",
+        "examples": [
+            {
+                "za": "Mwngz rox de daeuj mbouj caengz?",
+                "zh": "你知道他来了吗？",
+                "related_words": {
+                    "mwngz": "你",
+                    "rox": "知道",
+                    "de": "他",
+                    "daeuj": "来"
+                }
+            },
+            {
+                "za": "Sou bae gwn haeux mbouj caengz?",
+                "zh": "你们去吃饭了吗？",
+                "related_words": {
+                    "sou": "你们",
+                    "bae": "去",
+                    "gwn": "吃",
+                    "haeux": "饭"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "mbangj的意思是“些，部分”。在疑问句里，mbangj的意义比较模糊，常放在句子未端，主要是表达一种委婉语气。",
+        "examples": [
+            {
+                "za": "Mwngz yaek cawx maz mbangj?",
+                "zh": "你要买些什么？",
+                "related_words": {
+                    "mwngz": "你",
+                    "yaek": "要",
+                    "cawx": "买",
+                    "maz": "什么"
+                }
+            },
+            {
+                "za": "Gwnz daiz miz saw maz mbangj?",
+                "zh": "桌子上有些什么书？",
+                "related_words": {
+                    "gwnz": "上",
+                    "daiz": "桌子",
+                    "miz": "有",
+                    "saw": "书",
+                    "maz": "什么"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dox本身没有什么实际意义，与一些时间名词结合，表示某一个特定的时段。",
+        "examples": [
+            {
+                "za": "doxhaemh",
+                "zh": "晚上",
+                "related_words": {
+                    "haemh": "晚"
+                }
+            },
+            {
+                "za": "doxngoenz",
+                "zh": "白天",
+                "related_words": {
+                    "ngoenz": "日，昼"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "bae 的本义是动词“去”，bae可以用于句末，作为一个语法化了语气词，是对所要陈述事项的形容性的进一步强调。",
+        "examples": [
+            {
+                "za": "Duz vaiz neix hung dangqmaz bae.",
+                "zh": "这头牛高高大大的。",
+                "related_words": {
+                    "duz": "头 [量词]",
+                    "vaiz": "牛",
+                    "neix": "这",
+                    "hung": "大",
+                    "dangqmaz": "非常"
+                }
+            },
+            {
+                "za": "Vanj haeux neix rim dangqmaz bae.",
+                "zh": "这碗饭满满的。",
+                "related_words": {
+                    "vanj": "碗",
+                    "haeux": "饭",
+                    "neix": "这",
+                    "rim": "满",
+                    "dangqmaz": "非常"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“……mbouj dwg ha?”的意思是“……不是吗？”。反问疑问句的语气词要用ha。",
+        "examples": [
+            {
+                "za": "Gonjbit mwngz youq gwnz daiz mbouj dwg ha?",
+                "zh": "你的笔在桌子上不是吗？",
+                "related_words": {
+                    "gonjbit": "笔",
+                    "mwngz": "你",
+                    "youq": "在",
+                    "gwnz": "上",
+                    "daiz": "桌子"
+                }
+            },
+            {
+                "za": "De ngoenzlwenz cix daeuj lo mbouj dwg ha?",
+                "zh": "他昨天就来了不是吗？",
+                "related_words": {
+                    "de": "他",
+                    "ngoenzlwenz": "昨天",
+                    "cix": "就",
+                    "daeuj": "来",
+                    "lo": "了"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“…… bae …… ma”表示某一动作行为的反复性，在词序上跟汉语的＂……来……去“正好相反。",
+        "examples": [
+            {
+                "za": "fonj bae fonj ma",
+                "zh": "翻来覆去",
+                "related_words": {
+                    "fonj": "翻"
+                }
+            },
+            {
+                "za": "byaij bae byaij ma",
+                "zh": "走来走去",
+                "related_words": {
+                    "byaij": "走"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“baez …… couh ……”表示“一……就……”。",
+        "examples": [
+            {
+                "za": "Gou baez daengz ranz, couh daj denva hawj mwngz.",
+                "zh": "我一到家就给你打电话。",
+                "related_words": {
+                    "gou": "我",
+                    "daengz": "到",
+                    "ranz": "家",
+                    "daj": "打",
+                    "denva": "电话",
+                    "hawj": "给",
+                    "mwngz": "你"
+                }
+            },
+            {
+                "za": "De baez haeuj gyausiz, gyoengq doengzhag couh riu lo.",
+                "zh": "他一进教室，同学们就笑了。",
+                "related_words": {
+                    "de": "他",
+                    "haeuj": "进",
+                    "gyausiz": "教室",
+                    "gyoengq": "群",
+                    "doengzhag": "同学",
+                    "riu": "笑",
+                    "lo": "了"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "购物询价或类似情况时，壮语量词可以单独放在句末，相当于“每”“一”。",
+        "examples": [
+            {
+                "za": "Gij saw neix geijlai ngaenz bonj?",
+                "zh": "这些书多少钱一本？",
+                "related_words": {
+                    "gij": "些",
+                    "saw": "书",
+                    "neix": "这",
+                    "geijlai": "多少",
+                    "ngaenz": "钱",
+                    "bonj": "本"
+                }
+            },
+            {
+                "za": "Gij gaeqlwg neix geijlai ngaenz duz?",
+                "zh": "这些小鸡多少钱一只？",
+                "related_words": {
+                    "gij": "些",
+                    "gaeqlwg": "小鸡",
+                    "neix": "这",
+                    "geijlai": "多少",
+                    "ngaenz": "钱",
+                    "duz": "只"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中表达“先做某事”用“…… gonq”，壮语中也有汉语借词sien“先”，可以两者结合表达一个共同的意思。",
+        "examples": [
+            {
+                "za": "sien aeu gijneix gonq",
+                "zh": "先要这些。",
+                "related_words": {
+                    "aeu": "要",
+                    "gijneix": "这些"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dwk是结构助词，补语标记词，相当于汉语的“得”，后边跟着一个补语。",
+        "examples": [
+            {
+                "za": "Raeuz ndwn dwk ga maz lo.",
+                "zh": "我们站得腿都发麻了。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "ndwn": "站",
+                    "ga": "腿",
+                    "maz": "麻木",
+                    "lo": "了"
+                }
+            },
+            {
+                "za": "Yawj dwk ngah bae.",
+                "zh": "看着都让人嘴馋了。",
+                "related_words": {
+                    "yawj": "看",
+                    "ngah": "馋",
+                    "bae": "了"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中不少量词等后能接着一个数量词组，形成“量＋数＋量”的紧密结构，表示该量词所代表的人或事物中，每个人或每件事物所具有或所需要的另一个数量。意义上与汉语“每＋量+数＋量”相当。当其中的“数”为“一”时，那么这个“一”可以省掉。",
+        "examples": [
+            {
+                "za": "boux song aen",
+                "zh": "每人两个",
+                "related_words": {
+                    "boux": "人",
+                    "song": "两",
+                    "aen": "个"
+                }
+            },
+            {
+                "za": "boux duz",
+                "zh": "每人一只",
+                "related_words": {
+                    "boux": "人",
+                    "duz": "只"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "saek后往往要接一个数量短语，表示仅仅是一个概数或是一个概略的时间，且数最极少。当后面的数目为“一”时，那么这个“一”也可以省略。也常与song（二）结合表示概数，与汉语的“一二”相当。",
+        "examples": [
+            {
+                "za": "saek gaen",
+                "zh": "一斤左右",
+                "related_words": {
+                    "gaen": "斤"
+                }
+            },
+            {
+                "za": "saek gonj",
+                "zh": "个把支笔",
+                "related_words": {
+                    "gonj": "支"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“…… bae di”的意思是“……了一点儿”，常用放在形容词之后，表示与预期的目标效果相比，超过了或尚未达到适当的程度。",
+        "examples": [
+            {
+                "za": "Diuz buh neix raez bae di.",
+                "zh": "这件衣服长了一点儿。",
+                "related_words": {
+                    "diuz": "件",
+                    "buh": "衣服",
+                    "neix": "这",
+                    "raez": "长"
+                }
+            },
+            {
+                "za": "Doiq haiz neix hung bae di.",
+                "zh": "这双鞋子大了一点儿。",
+                "related_words": {
+                    "doiq": "双",
+                    "haiz": "鞋子",
+                    "neix": "这",
+                    "hung": "大"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "baenz后加时间名词，表示“整个““全部”的意思。",
+        "examples": [
+            {
+                "za": "baenzhaemh",
+                "zh": "整个晚上",
+                "related_words": {
+                    "haemh": "晚上"
+                }
+            },
+            {
+                "za": "baenzhwnz",
+                "zh": "一整夜",
+                "related_words": {
+                    "hwnz": "夜"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "baenz 后往往接一个集体量词或数量词组的，表示这个集体量词或数最词组所代表的人或事物都怎么样怎么样了，与汉语的“全部、整个、整整、好”相当。",
+        "examples": [
+            {
+                "za": "Raeuz baenz aenban cungj bae laeng lauxsae guhcaemz lo.",
+                "zh": "我们全班都去老师家玩了。",
+                "related_words": {
+                    "raeuz": "我们",
+                    "aenban": "班",
+                    "cungj": "都",
+                    "bae": "去",
+                    "laeng": "家",
+                    "lauxsae": "老师",
+                    "guhcaemz": "玩",
+                    "lo": "了"
+                }
+            },
+            {
+                "za": "De daeuj nguh baenz buenq diemjcung.",
+                "zh": "他来晚了整整半个小时。",
+                "related_words": {
+                    "de": "他",
+                    "daeuj": "来",
+                    "nguh": "晚，迟到",
+                    "buenq": "半",
+                    "diemjcung": "小时"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "baenz可以当动词“成为，生成”。对于得了什么疾病，一般都用baenz来表示。",
+        "examples": [
+            {
+                "za": "baenz bingh",
+                "zh": "生病",
+                "related_words": {
+                    "bingh": "病"
+                }
+            },
+            {
+                "za": "baenz ganjmau",
+                "zh": "感冒",
+                "related_words": {
+                    "ganjmau": "感冒"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“dwk”可以用作表示动作或状态持续的意思，相当于汉语中的“着”。",
+        "examples": [
+            {
+                "za": "De gyaeuj dot dwk.",
+                "zh": "他头疼着呢。",
+                "related_words": {
+                    "de": "他",
+                    "gyaeuj": "头",
+                    "dot": "疼"
+                }
+            },
+            {
+                "za": "Mwngz naengh dwk.",
+                "zh": "你坐着。",
+                "related_words": {
+                    "mwngz": "你",
+                    "naengh": "坐"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“yied …… yied ……”表示随着时间的推移或事物的发展，数量或程度逐渐增加或减少，类似于汉语中的“越来越……”。",
+        "examples": [
+            {
+                "za": "yied gangj yied vaiq",
+                "zh": "越说越快",
+                "related_words": {
+                    "gangj": "说",
+                    "vaiq": "快"
+                }
+            },
+            {
+                "za": "yied daeuj yied naek",
+                "zh": "越来越重",
+                "related_words": {
+                    "daeuj": "来",
+                    "naek": "严重"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“aeu”一般用于主要动词短语之后，是对某一动作行为方式的选择，表”采取……方式”的意思。",
+        "examples": [
+            {
+                "za": "Bae yihyen byaij aeu roxnaeuz naengh ci aeu?",
+                "zh": "去医院走着好还是坐车去好？",
+                "related_words": {
+                    "bae": "去",
+                    "yihyen": "医院",
+                    "byaij": "走",
+                    "roxnaeuz": "还是",
+                    "naengh": "坐",
+                    "ci": "车"
+                }
+            },
+            {
+                "za": "Byaij aeu ndaej lo.",
+                "zh": "走着去就行了。",
+                "related_words": {
+                    "byaij": "走",
+                    "ndaej": "可以，行",
+                    "lo": "了"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“gvaq”是壮语中用来表示比较的介词，类似于汉语中的“比”，用于表达比较性状和程度的句子结构。其句式为“A + 形容词及其短语 + gvaq + B”。",
+        "examples": [
+            {
+                "za": "Siujcangh boq dig ak gvaq gou.",
+                "zh": "小张吹笛子比我吹得更好。",
+                "related_words": {
+                    "siujcangh": "小张",
+                    "boq": "吹",
+                    "dig": "笛子",
+                    "ak": "强",
+                    "gou": "我"
+                }
+            },
+            {
+                "za": "Ngoenzneix hwngq gvaq ngoenzlwenz.",
+                "zh": "今天比昨天热。",
+                "related_words": {
+                    "ngoenzneix": "今天",
+                    "hwngq": "热",
+                    "ngoenzlwenz": "昨天"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "naj可以放在时间名词后面，要表达下一个同等时间的概念时。",
+        "examples": [
+            {
+                "za": "ngoenz singhgiz roek naj",
+                "zh": "下个星期六",
+                "related_words": {
+                    "ngoenz singhgiz roek": "星期六"
+                }
+            },
+            {
+                "za": "ndwennaj",
+                "zh": "下个月",
+                "related_words": {
+                    "ndwen": "月"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "baenz表示掌握（会）某种技能，放在动词短语之后。与baenz相对的、更高一级的是ak，表示具有很高的技能。",
+        "examples": [
+            {
+                "za": "De youzyungj baenz.",
+                "zh": "他会游泳。",
+                "related_words": {
+                    "de": "他",
+                    "youzyungj": "游泳"
+                }
+            },
+            {
+                "za": "Gou gangj Vahcuengh baenz.",
+                "zh": "我会说壮语。",
+                "related_words": {
+                    "gou": "我",
+                    "gangj": "说",
+                    "vahcuengh": "壮语"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“gonq ……”意思是“……之前”，“laeng ……”意思是“……之后”，用于表示动作行为的先后。",
+        "examples": [
+            {
+                "za": "Gonq hwnj dangz doeg caemh ndaej.",
+                "zh": "上课之前也可以读。",
+                "related_words": {
+                    "gonq": "之前",
+                    "hwnj": "上",
+                    "dangz": "课",
+                    "doeg": "读",
+                    "caemh": "也",
+                    "ndaej": "可以"
+                }
+            },
+            {
+                "za": "Gonq yenjcuz raeuz yaek cangndang saekyaep.",
+                "zh": "演出之前，我们要打扮一下。",
+                "related_words": {
+                    "yenjcuz": "演出",
+                    "raeuz": "我们",
+                    "yaek": "将要",
+                    "cangndang": "打扮",
+                    "saekyaep": "一下"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dox+一般动词，表示动作行为是由甲乙双方相互进行的。",
+        "examples": [
+            {
+                "za": "doxndaq",
+                "zh": "对骂",
+                "related_words": {
+                    "ndaq": "骂"
+                }
+            },
+            {
+                "za": "doxbang",
+                "zh": "互助",
+                "related_words": {
+                    "bang": "帮"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dox＋趋向动词，表示动作行为的方向。",
+        "examples": [
+            {
+                "za": "doxhwnj",
+                "zh": "往上",
+                "related_words": {
+                    "hwnj": "上"
+                }
+            },
+            {
+                "za": "doxroengz",
+                "zh": "往下",
+                "related_words": {
+                    "roengz": "下"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dox＋形容词（心理），表示甲乙双方的心理活动方面的交互状态。但结合后，原来的形容词性词根已基本变为动词性，具有了动词的性质。",
+        "examples": [
+            {
+                "za": "doxhaengj",
+                "zh": "爱慕",
+                "related_words": {
+                    "haengj": "喜欢"
+                }
+            },
+            {
+                "za": "doxgyaez",
+                "zh": "相爱",
+                "related_words": {
+                    "gyaez": "喜爱"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "dox＋介词，含有“一起、共同”等副词意义。作为副词，它们是可以修饰动词的。",
+        "examples": [
+            {
+                "za": "doxgaen",
+                "zh": "跟着、一起",
+                "related_words": {
+                    "gaen": "跟"
+                }
+            },
+            {
+                "za": "doxcaeuq",
+                "zh": "共同、一起",
+                "related_words": {
+                    "caeuq": "与、同"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中，mbiengj(“半”) 可以放在“东、西, 左、右, 上、下” 方位词前，可以说mbiengj的作用与baih(“边” 或“面”)基本相当。",
+        "examples": [
+            {
+                "za": "mbiengjgwnz",
+                "zh": "上面",
+                "related_words": {
+                    "baihgwnz": "上面"
+                }
+            },
+            {
+                "za": "mbiengjlaj",
+                "zh": "下面",
+                "related_words": {
+                    "baihlaj": "下面"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语除在特定的语境下， 为表示强调或夸张，也可以重叠量词以外的名词。这样的重叠形式主要有两种，一种是AA式，另一种是AABB式。",
+        "examples": [
+            {
+                "za": "Ndaw ranz youzyouz mbouj miz, gyugyu mbouj miz.",
+                "zh": "家里什么油盐都没有",
+                "related_words": {
+                    "ndaw ranz": "家里",
+                    "youz": "油",
+                    "mbouj": "不",
+                    "miz": "有",
+                    "gyu": "盐"
+                }
+            },
+            {
+                "za": "Hwnj caengz gwnzgwnz bae.",
+                "zh": "上到最高的一层。",
+                "related_words": {
+                    "hwnj": "上",
+                    "caengz": "层",
+                    "gwnz": "高",
+                    "bae": "去"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中有一种习惯用语AA + guhmaz + A， 若这种重叠形式中的A为名词，则往往表示谦虚的客套话，类似汉语中的“什么A不A的”。",
+        "examples": [
+            {
+                "za": "ngaenzngaenz guhmaz ngaenz",
+                "zh": "什么钱不钱的",
+                "related_words": {
+                    "ngaenz": "钱"
+                }
+            },
+            {
+                "za": "bitbit guhmaz bit",
+                "zh": "什么笔不笔的",
+                "related_words": {
+                    "bit": "笔"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语在表示复数时, 通常在该名词前加一个集体量词“gyoengq”。",
+        "examples": [
+            {
+                "za": "gyoengq vunz",
+                "zh": "人们",
+                "related_words": {
+                    "vunz": "人"
+                }
+            },
+            {
+                "za": "gyoengq lwgnyez",
+                "zh": "孩子们",
+                "related_words": {
+                    "lwgnyez": "孩子"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在“mbouj + A + mbouj + B”式结构中，壮语副词的mbouj“不”可以置于属性相近的名词前的，表示否定，意思是“没有A和B”。",
+        "examples": [
+            {
+                "za": "mbouj buh mbouj vaq",
+                "zh": "没有衣服",
+                "related_words": {
+                    "buh": "上衣",
+                    "vaq": "裤子"
+                }
+            },
+            {
+                "za": "mbouj fwngz mbouj ga",
+                "zh": "没有手脚",
+                "related_words": {
+                    "fwngz": "手",
+                    "ga": "脚"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在“A + mbouj + B”式结构中，壮语副词的mbouj“不”可以置于属性相近的名词前的，表示否定，意思是“A和B都没有”。",
+        "examples": [
+            {
+                "za": "Byaek mbouj noh.",
+                "zh": "什么菜或肉都没有。",
+                "related_words": {
+                    "byaek": "菜",
+                    "noh": "肉"
+                }
+            },
+            {
+                "za": "Bit mbouj gaeq.",
+                "zh": "鸡鸭都没有。",
+                "related_words": {
+                    "bit": "鸭",
+                    "gaeq": "鸡"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在“mbouj + A + cix + B”式结构中，壮语副词的mbouj“不”和cix“即、就”可以置于属性相近的名词前的，表示选择，意思是“不是A就是B”。",
+        "examples": [
+            {
+                "za": "Mbouj bit cix gaeq.",
+                "zh": "（笼子里）不是鸡就是鸭。",
+                "related_words": {
+                    "bit": "鸭",
+                    "gaeq": "鸡"
+                }
+            },
+            {
+                "za": "Mbouj boh cix meh.",
+                "zh": "（家里）不是父亲就是母亲。",
+                "related_words": {
+                    "boh": "父亲",
+                    "meh": "母亲"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "动词可以通过肯定否定相叠的方式，构成“A mbouj A”的结构，表示疑问。",
+        "examples": [
+            {
+                "za": "ninz mbouj ninz",
+                "zh": "睡不睡",
+                "related_words": {
+                    "ninz": "睡"
+                }
+            },
+            {
+                "za": "cawx mbouj cawx",
+                "zh": "买不买",
+                "related_words": {
+                    "cawx": "买"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "动词后边一般能直接加上时态助词dwk“着”、liux“了”， 分别表示正在进行、完成的时态。",
+        "examples": [
+            {
+                "za": "gwn liux haeux",
+                "zh": "吃了饭",
+                "related_words": {
+                    "gwn": "吃",
+                    "haeux": "饭"
+                }
+            },
+            {
+                "za": "haeuj liux ranz",
+                "zh": "睡了觉",
+                "related_words": {
+                    "haeuj": "睡",
+                    "ranz": "觉"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "动词后边一般能在后面带上时态助词gvaq“过”，表示经历时态。但壮汉语在结构上略有不同, 壮语的gvaq置于述宾词组之后，汉语的“过” 则紧贴着动词之后。",
+        "examples": [
+            {
+                "za": "Gou yawj bonj saw neix gvaq.",
+                "zh": "我看过这本书。",
+                "related_words": {
+                    "gou": "我",
+                    "yawj": "看",
+                    "bonj": "本",
+                    "saw": "书",
+                    "neix": "这"
+                }
+            },
+            {
+                "za": "De bae daengz Bwzgingh gvaq.",
+                "zh": "他到过北京。",
+                "related_words": {
+                    "de": "他",
+                    "bae": "去",
+                    "daengz": "到",
+                    "Bwzgingh": "北京"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语有一种习惯用语AA + guhmaz + A， 其中A为动词。这种重叠形式往往带有“ 训斥或劝慰” 的意思, 要求对方放弃某种行为，相当于汉语中的“A什么A”。",
+        "examples": [
+            {
+                "za": "Daejdaej guhmaz daej ne.",
+                "zh": "哭什么哭呢。",
+                "related_words": {
+                    "daej": "哭",
+                    "ne": "呢"
+                }
+            },
+            {
+                "za": "Hemqhemq guhmaz hemq ne.",
+                "zh": "喊什么喊呢。",
+                "related_words": {
+                    "hemq": "喊",
+                    "ne": "呢"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中大部分单音的行为动词都能够加上声母相同、韵母为-awq (或-ak、-ag）的词尾音节, 表示“催促、干脆、索性、随便” 等附加的意义。这些词尾音节的声母与前面动词要保持一致。",
+        "examples": [
+            {
+                "za": "camcawq",
+                "zh": "快速地问",
+                "related_words": {
+                    "cam": "问",
+                    "-awq": "词尾音节"
+                }
+            },
+            {
+                "za": "raemjrak",
+                "zh": "很随便地砍",
+                "related_words": {
+                    "raemj": "砍",
+                    "-ak": "词尾音节"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中大部分单音的行为动词都能够加上声母相同、韵母为-awq (或-ak、-ag）的词尾音节, 表示“催促、干脆、索性、随便” 等附加的意义。这些词尾音节的声母与前面动词要保持一致。壮语动词的这些AB式结构, 可以通过“A + E + AB” 的方式来表示因时间紧急而催促对方赶快采取某种行动, 不要拖延, 本身具有“催促的、不计后果的”意义, 其中的E是个固定音节, 声母与动词相同, 韵母一般用i。",
+        "examples": [
+            {
+                "za": "raemj ri raemjrak",
+                "zh": "快点砍掉吧",
+                "related_words": {
+                    "raemj": "砍",
+                    "-ak": "词尾音节"
+                }
+            },
+            {
+                "za": "sik si siksak",
+                "zh": "快点撕掉吧",
+                "related_words": {
+                    "sik": "撕",
+                    "-ak": "词尾音节"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语有些单音及物动词前可以加上词头daj- 。这是动词标志的一种, 表示及物动词不仅变成了不及物动词, 而且还扩大其意义范围。",
+        "examples": [
+            {
+                "za": "dajndaem",
+                "zh": "种植",
+                "related_words": {
+                    "ndaem": "种"
+                }
+            },
+            {
+                "za": "dajcawj",
+                "zh": "烹饪",
+                "related_words": {
+                    "cawj": "煮"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在“A + 量词 + dawz + 量词”结构中, A 是主要动词, dawz 则是说明在为A 的下一个动作做准备。这种格式都是用于强调某一动作行为的重复性, 在特定语境下, 含有“ 贪婪、霸占” 等贬义。",
+        "examples": [
+            {
+                "za": "aeu gaiq dawz gaiq",
+                "zh": "拿了一个又一个",
+                "related_words": {
+                    "aeu": "拿",
+                    "gaiq": "个"
+                }
+            },
+            {
+                "za": "gwn aen dawz aen",
+                "zh": "吃了一个又一个",
+                "related_words": {
+                    "gwn": "吃",
+                    "aen": "个"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，可以通过将形容词肯定、否定相重叠，构成“A mbouj A”的形式，表示疑问。",
+        "examples": [
+            {
+                "za": "hab mbouj hab",
+                "zh": "合适不合适",
+                "related_words": {
+                    "hab": "合适"
+                }
+            },
+            {
+                "za": "unq mbouj unq",
+                "zh": "软不软",
+                "related_words": {
+                    "unq": "软"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中，将形容词本身重叠，表示语意的加重。一般构成“AA”式结构，并在后边加上bae，以加强其形容性，类似于汉语中的“儿的”。",
+        "examples": [
+            {
+                "za": "ronghrongh bae",
+                "zh": "亮亮儿的",
+                "related_words": {
+                    "rongh": "亮"
+                }
+            },
+            {
+                "za": "byombyom bae",
+                "zh": "瘦瘦的",
+                "related_words": {
+                    "byom": "瘦"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，形容词会有AABB式重叠，这一格式大都是汉语借词, 其原形是复合词AB。",
+        "examples": [
+            {
+                "za": "vuenvuen heijheij",
+                "zh": "欢欢喜喜",
+                "related_words": {
+                    "vuenheij": "欢喜"
+                }
+            },
+            {
+                "za": "gauhgauh hinghing",
+                "zh": "高高兴兴",
+                "related_words": {
+                    "gauhhing": "高兴"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语几乎所有的单音形容词都可以带后附音节，构成AB式的。形容词还有一种在AB式的基础上嵌入一个音节的格式, 即ACAB式，这里C 就是那个被嵌入的音节。嵌音C的声母要随词根A 音节声母的变化而变化, 保持一致，只有韵母固定为i。",
+        "examples": [
+            {
+                "za": "ndaem di ndaemndat",
+                "zh": "黑乎乎的",
+                "related_words": {
+                    "ndaem": "黑",
+                    "ndaemndat": "很黑"
+                }
+            },
+            {
+                "za": "laeg li laegluemz",
+                "zh": "深不见底的",
+                "related_words": {
+                    "laeg": "深",
+                    "laegluemz": "很深"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "形容词作名词的修饰或限制时, 壮语名词在前, 形容词于后。",
+        "examples": [
+            {
+                "za": "byoem henj",
+                "zh": "黄头发",
+                "related_words": {
+                    "byoem": "头发",
+                    "henj": "黄"
+                }
+            },
+            {
+                "za": "vunzhung",
+                "zh": "大人",
+                "related_words": {
+                    "vunz": "人",
+                    "hung": "大"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语形容词中的嗅觉类和部分视觉类可以活用为动词。",
+        "examples": [
+            {
+                "za": "haeu sing",
+                "zh": "有腥味",
+                "related_words": {
+                    "hau": "臭",
+                    "sing": "腥"
+                }
+            },
+            {
+                "za": "haeu mwt",
+                "zh": "有霉味",
+                "related_words": {
+                    "haeu": "臭",
+                    "mwt": "霉"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语序数词的一种构成方法是在基数词前加词头daih (第)、co (初)。",
+        "examples": [
+            {
+                "za": "daih it",
+                "zh": "第一",
+                "related_words": {
+                    "it": "一"
+                }
+            },
+            {
+                "za": "daih ngeih",
+                "zh": "第二",
+                "related_words": {
+                    "ngeih": "二"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语序数词放在在时间名词、亲属称谓名词或一些量词之后。",
+        "examples": [
+            {
+                "za": "ndwen ngux",
+                "zh": "五月份",
+                "related_words": {
+                    "ndwen": "月",
+                    "ngux": "五"
+                }
+            },
+            {
+                "za": "ndwen caet",
+                "zh": "七月份",
+                "related_words": {
+                    "ndwen": "月",
+                    "caet": "七"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "分数词是表示单位在整体中所占的比例的词, 其形式为“... faen cih ...”，类似于汉语的“几分之几”。",
+        "examples": [
+            {
+                "za": "sam faen cih it",
+                "zh": "三分之一",
+                "related_words": {
+                    "sam": "三",
+                    "it": "一"
+                }
+            },
+            {
+                "za": "haj faenh cih ngeih",
+                "zh": "五分之二",
+                "related_words": {
+                    "haj": "五",
+                    "ngeih": "二"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在基数词后加lai“多(来)”、baj“把(来)”、doxhwnj“以上”、doxroengz“以下”、doxbae“以上”等词, 表示的是一个概数。",
+        "examples": [
+            {
+                "za": "cib lai vunz",
+                "zh": "十多人",
+                "related_words": {
+                    "cib": "十",
+                    "vunz": "人"
+                }
+            },
+            {
+                "za": "cib baj boux",
+                "zh": "十来个",
+                "related_words": {
+                    "cib": "十",
+                    "boux": "个"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "“十”以内相邻的两个基数词可以连用, 表示不确定。",
+        "examples": [
+            {
+                "za": "sam seiq boux",
+                "zh": "三四个",
+                "related_words": {
+                    "sam": "三",
+                    "seiq": "四",
+                    "boux": "个"
+                }
+            },
+            {
+                "za": "haj roek go",
+                "zh": "五六棵",
+                "related_words": {
+                    "haj": "五",
+                    "roek": "六",
+                    "go": "棵"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的序数词一般放在量词之后。",
+        "examples": [
+            {
+                "za": "ngoengz daih roek",
+                "zh": "第六天",
+                "related_words": {
+                    "ngoengz": "天",
+                    "roek": "六"
+                }
+            },
+            {
+                "za": "aen daih sam",
+                "zh": "第三个",
+                "related_words": {
+                    "aen": "个",
+                    "sam": "三"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语数词bak“百”、cien“千”、fanh“万”、ik“亿”前面的数词为it“一” 时, 能直接与量词结合, 数词it“一”一般省略。",
+        "examples": [
+            {
+                "za": "bak go",
+                "zh": "一百棵",
+                "related_words": {
+                    "it": "一",
+                    "bak": "百",
+                    "go": "棵"
+                }
+            },
+            {
+                "za": "cien boux",
+                "zh": "一千个人",
+                "related_words": {
+                    "it": "一",
+                    "cien": "千",
+                    "boux": "个"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的数词放在某些动词之后, 表示动作行为的次序。",
+        "examples": [
+            {
+                "za": "rap it",
+                "zh": "挑第一担",
+                "related_words": {
+                    "rap": "挑",
+                    "it": "一"
+                }
+            },
+            {
+                "za": "cae ngeih",
+                "zh": "犁第二遍",
+                "related_words": {
+                    "cae": "犁",
+                    "ngeih": "二"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中ndeu和it都表示“一”。表示序数或概数时, 用it而不用ndeu。",
+        "examples": [
+            {
+                "za": "boux daih it",
+                "zh": "第一个",
+                "related_words": {
+                    "daih": "第",
+                    "ndeu": "一",
+                    "it": "一",
+                    "boux": "个"
+                }
+            },
+            {
+                "za": "duz cib it",
+                "zh": "第十一只",
+                "related_words": {
+                    "cib": "十",
+                    "ndeu": "一",
+                    "it": "一",
+                    "duz": "只"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中ndeu和it都表示“一”。bak“百”、cien“千”、fanh“ 万”、ik“ 亿” 等词后边不带零头, 表示整数时, 可用ndeu, 也可用it, 但ndeu 要置后, it 则要置前。",
+        "examples": [
+            {
+                "za": "bak ndeu",
+                "zh": "一百",
+                "related_words": {
+                    "bak": "百",
+                    "ndeu": "一"
+                }
+            },
+            {
+                "za": "it bak",
+                "zh": "一百",
+                "related_words": {
+                    "bak": "百",
+                    "it": "一"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中ndeu和it都表示“一”。与量词结合时, ndeu 常放在后边, it 则放在前。",
+        "examples": [
+            {
+                "za": "boux ndeu",
+                "zh": "一个",
+                "related_words": {
+                    "boux": "个",
+                    "ndeu": "一",
+                    "it": "一"
+                }
+            },
+            {
+                "za": "it boux",
+                "zh": "一个",
+                "related_words": {
+                    "boux": "个",
+                    "it": "一",
+                    "ndeu": "一"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中ndeu和it都表示“一”，ngeih和song都表示“二”。无论是阳历还是阴历, 只能用it和ngeih来表示, 而不能用ndeu和song。",
+        "examples": [
+            {
+                "za": "it nyied it hauh",
+                "zh": "（阳历）一月一日",
+                "related_words": {
+                    "nyied": "月",
+                    "hauh": "日",
+                    "it": "一",
+                    "ndeu": "一"
+                }
+            },
+            {
+                "za": "cieng nyied co it",
+                "zh": "（农历）正月初一",
+                "related_words": {
+                    "cieng": "正",
+                    "nyied": "月",
+                    "co": "初",
+                    "it": "一",
+                    "ndeu": "一"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，ngeih和song都表示数字二。ngeih 只能用在bak“百”、cien“千”、fanh“ 万”、ik“亿”等词之后, 而song正好相反, 只能放在这些词的前边, 相当汉语的“两”。",
+        "examples": [
+            {
+                "za": "bak ngeih",
+                "zh": "一百二",
+                "related_words": {
+                    "bak": "百",
+                    "ngeih": "二",
+                    "song": "两"
+                }
+            },
+            {
+                "za": "fanh ngeih",
+                "zh": "一万二",
+                "related_words": {
+                    "fanh": "万",
+                    "ngeih": "二",
+                    "song": "两"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，ngeih和song都表示数字二。表示序数时, 用ngeih而不用song。song能活用为概数, ngeih 却不能。",
+        "examples": [
+            {
+                "za": "boux daih ngeih",
+                "zh": "第二个",
+                "related_words": {
+                    "daih": "第",
+                    "ngeih": "二",
+                    "song": "两",
+                    "boux": "个"
+                }
+            },
+            {
+                "za": "duz daih ngeih",
+                "zh": "第二只",
+                "related_words": {
+                    "daih": "第",
+                    "ngeih": "二",
+                    "song": "两",
+                    "duz": "只"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，haj和ngux都表示数字五，roek和loeg都表示数字六。计数或表示序数时, 一般用haj和roek，而不用ngux和loeg。但表示亲属排行时, 一般用ngux、loeg 而不用haj、roek。",
+        "examples": [
+            {
+                "za": "daih haj duz",
+                "zh": "第五只",
+                "related_words": {
+                    "daih": "第",
+                    "haj": "五",
+                    "ngux": "五",
+                    "duz": "只"
+                }
+            },
+            {
+                "za": "daih roek cek",
+                "zh": "第六册",
+                "related_words": {
+                    "daih": "第",
+                    "roek": "六",
+                    "loeg": "六",
+                    "cek": "册"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "在壮语中，haj和ngux都表示数字五，roek和loeg都表示数字六。表示日期时, 阳历一般用haj、roek, 而不用ngux、loeg。但阴历的表示法则相反, 一般用ngux、loeg 而不用haj、roek。",
+        "examples": [
+            {
+                "za": "haj nyied haj hauh",
+                "zh": "(阳历)五月五日",
+                "related_words": {
+                    "nyied": "月",
+                    "haj": "五",
+                    "ngux": "五",
+                    "hauh": "日"
+                }
+            },
+            {
+                "za": "roek nyied roek hauh",
+                "zh": "(阳历)六月六日",
+                "related_words": {
+                    "nyied": "月",
+                    "roek": "六",
+                    "loeg": "六",
+                    "hauh": "日"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "一些数量词组（数词+量词）也可以重叠使用, 重叠后表示某一动作行为的次序。当数量词组的数词为“一” 时, 一般不用it而被baez“次”取代。",
+        "examples": [
+            {
+                "za": "haj boux haj boux guhdoih bae",
+                "zh": "每五个相伴而去",
+                "related_words": {
+                    "haj": "五",
+                    "boux": "个",
+                    "guhdoih": "相伴",
+                    "baez": "去"
+                }
+            },
+            {
+                "za": "song diuz song diuz doxcug",
+                "zh": "每两条捆在一起。",
+                "related_words": {
+                    "song": "两",
+                    "diuz": "条",
+                    "doxcug": "捆在一起"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "量词可作为名词的前缀，具有区分类别的作用。boux-这一前缀表示人物。",
+        "examples": [
+            {
+                "za": "bouxhek",
+                "zh": "客人",
+                "related_words": {
+                    "hek": "客"
+                }
+            },
+            {
+                "za": "bouxsang",
+                "zh": "高个的",
+                "related_words": {
+                    "sang": "高"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "量词可作为名词的前缀，具有区分类别的作用。cangh-这一前缀表示从事某一行业的人。",
+        "examples": [
+            {
+                "za": "canghbyaek",
+                "zh": "菜贩子",
+                "related_words": {
+                    "byaek": "菜"
+                }
+            },
+            {
+                "za": "canghyw",
+                "zh": "医生",
+                "related_words": {
+                    "yw": "药"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "量词可作为名词的前缀，能使动词名词化。",
+        "examples": [
+            {
+                "za": "fagcanj",
+                "zh": "铲子",
+                "related_words": {
+                    "fag": "把",
+                    "canj": "铲"
+                }
+            },
+            {
+                "za": "fagsiuq",
+                "zh": "凿子",
+                "related_words": {
+                    "fag": "把",
+                    "siuq": "凿"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "量词可作为名词的前缀，用于确定同音词的意义。",
+        "examples": [
+            {
+                "za": "gonjbit",
+                "zh": "笔",
+                "related_words": {
+                    "gonj": "支",
+                    "bit": "笔；鸭子"
+                }
+            },
+            {
+                "za": "duzbit",
+                "zh": "鸭子",
+                "related_words": {
+                    "duz": "只",
+                    "bit": "笔；鸭子"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语疑问代词与名词结合时, 位置在名词之后。",
+        "examples": [
+            {
+                "za": "buh maz",
+                "zh": "什么衣服",
+                "related_words": {
+                    "buh": "衣服",
+                    "maz": "什么"
+                }
+            },
+            {
+                "za": "ci maz",
+                "zh": "什么车",
+                "related_words": {
+                    "ci": "车",
+                    "maz": "什么"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语代词gag“自己” 与第一/第二/第三人称代词结合时, 放在第一/第二/第三代词前或后均可, 但意义各不相同。放在前面的表示“仅、只” 的意思。放在后面的表示“自己” 的意思。",
+        "examples": [
+            {
+                "za": "Gag gou bae.",
+                "zh": "只有我去。",
+                "related_words": {
+                    "gou": "我",
+                    "bae": "去"
+                }
+            },
+            {
+                "za": "Gag de youq.",
+                "zh": "只有他在。",
+                "related_words": {
+                    "de": "他",
+                    "youq": "在"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语指示代词与量词结合时, 位置在量词后，构成“量词 + 名词 + 指示代词”或者“量词 + 指示代词”的结构。",
+        "examples": [
+            {
+                "za": "duz neix",
+                "zh": "这只",
+                "related_words": {
+                    "duz": "只",
+                    "neix": "这"
+                }
+            },
+            {
+                "za": "boux haenx",
+                "zh": "那个(人)",
+                "related_words": {
+                    "boux": "个",
+                    "haenx": "那"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语疑问代词能修饰量词, 位置在量词之后。",
+        "examples": [
+            {
+                "za": "duz maz",
+                "zh": "什么动物",
+                "related_words": {
+                    "duz": "只",
+                    "maz": "什么"
+                }
+            },
+            {
+                "za": "go maz",
+                "zh": "什么植物",
+                "related_words": {
+                    "go": "棵",
+                    "maz": "什么"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语中，可以构成“yied + 量词 + yied + 形容词”的结构，表示比较、递进的关系。",
+        "examples": [
+            {
+                "za": "yied ngoenz yied ndei",
+                "zh": "一天比一天 (过得) 好",
+                "related_words": {
+                    "ngoenz": "天",
+                    "ndei": "好"
+                }
+            },
+            {
+                "za": "yied go yied sang",
+                "zh": "一棵比一棵(长得) 高",
+                "related_words": {
+                    "go": "棵",
+                    "sang": "高"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语象声词中模拟自然界或动物声音的词主要是放在动词之后, 用作补语。",
+        "examples": [
+            {
+                "za": "raemj faex ndogndog",
+                "zh": "“笃笃”地砍着树",
+                "related_words": {
+                    "raemj": "砍",
+                    "faex": "树",
+                    "ndogndog": "[拟声词]笃笃"
+                }
+            },
+            {
+                "za": "roeg mbin byuxbyux",
+                "zh": "鸟“扑扑”地飞着",
+                "related_words": {
+                    "roeg": "鸟",
+                    "mbin": "飞",
+                    "byuxbyux": "[拟声词]扑扑"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的结构助词dwk用于谓语和补语之间, 表示各种附加意义, 与汉语的“ 得” 相当。dwk主要用于动词、形容词之后, 用作补语的一般是主谓词组或带后附音节的动词、形容词。",
+        "examples": [
+            {
+                "za": "gwn dwk dungx bongz",
+                "zh": "吃得肚子胀",
+                "related_words": {
+                    "gwn": "吃",
+                    "dungx": "肚子",
+                    "bongz": "胀"
+                }
+            },
+            {
+                "za": "ndwn dwk ga raihmoed",
+                "zh": "站得腿发麻",
+                "related_words": {
+                    "ndwn": "站",
+                    "ga": "腿",
+                    "raihmoed": "麻木"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的结构助词ndaej用于谓语和补语之间, 表示各种附加意义, 与汉语的“得”相当。ndaej主要放在动词、形容词之后, 用作补语的一般是形容词。",
+        "examples": [
+            {
+                "za": "guh ndaej baenz",
+                "zh": "做得好",
+                "related_words": {
+                    "guh": "做",
+                    "baenz": "好"
+                }
+            },
+            {
+                "za": "mbin ndaej vaiq",
+                "zh": "飞得快",
+                "related_words": {
+                    "mbin": "飞",
+                    "vaiq": "快"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "时态助词ndaej放在谓语动词和补语之间。ndaej虽可以和汉语“了”对译, 却附加了“达到、能够或完成”之意, 表示动作行为达到一定的量, 因而其后一般是数量结构的词组。",
+        "examples": [
+            {
+                "za": "rap ndaej rap raemx ndeu",
+                "zh": "挑了一担水",
+                "related_words": {
+                    "rap": "挑；担",
+                    "raemx": "水",
+                    "ndeu": "一"
+                }
+            },
+            {
+                "za": "bae ndaej song ngoenz",
+                "zh": "去了两天",
+                "related_words": {
+                    "bae": "去",
+                    "song": "两",
+                    "ngoenz": "天"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语数量结构一般遵循汉语习惯, 即当ngeih“二”以上数目的数词与量词一起修饰、限制名词时, 数量结构位于名词之前。但是, 修饰、限制量词的数词为ndeu“一” 时,壮语数词和量词被名词分开, 即量词在名词前, 数词ndeu“一” 在名词后。",
+        "examples": [
+            {
+                "za": "sam boux vunz",
+                "zh": "三个人",
+                "related_words": {
+                    "sam": "三",
+                    "boux": "个",
+                    "vunz": "人"
+                }
+            },
+            {
+                "za": "seiq duz gaeq",
+                "zh": "四只鸡",
+                "related_words": {
+                    "seiq": "四",
+                    "duz": "只",
+                    "gaeq": "鸡"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的偏正结构中有一种特殊的现象。量词能受形容词等其它词的修饰、限制, 构成“量词 + 修饰、限制成分”的偏正词组, 语义上相当于汉语的“的”字结构。",
+        "examples": [
+            {
+                "za": "duz biz",
+                "zh": "肥的(那只)",
+                "related_words": {
+                    "duz": "只",
+                    "biz": "肥"
+                }
+            },
+            {
+                "za": "fag raeh",
+                "zh": "锋利的(那把)",
+                "related_words": {
+                    "fag": "把",
+                    "raeh": "锋利"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "述宾词组是由述语和宾语构成的词组。壮语在特定的句式里, 述宾词组中动作行为所支配或涉及的对象还可以由量词来充当。",
+        "examples": [
+            {
+                "za": "gwn vanj",
+                "zh": "吃一碗",
+                "related_words": {
+                    "gwn": "吃",
+                    "vanj": "碗"
+                }
+            },
+            {
+                "za": "aeu aen",
+                "zh": "拿一个",
+                "related_words": {
+                    "aeu": "拿",
+                    "aen": "个"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "象声补语———一般由象声词充当, 放在动词之后, 以助词dwk来连接的, 并具有描绘的作用。",
+        "examples": [
+            {
+                "za": "Duzroeg mbin dwk byux.",
+                "zh": "鸟儿“扑”地一声飞了。",
+                "related_words": {
+                    "duzroeg": "鸟儿",
+                    "mbin": "飞",
+                    "byux": "[拟声词]扑"
+                }
+            },
+            {
+                "za": "Gofaex raek dwk hat.",
+                "zh": "树“哒” 地一声断了。",
+                "related_words": {
+                    "gofaex": "树",
+                    "raek": "断",
+                    "hat": "[拟声词]哒"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "原因补语———一般由名词、形容词、动词充当, 放在不及物动词之后, 用于说明动作的原因。",
+        "examples": [
+            {
+                "za": "Duz gaeqlwg neix dai nyungz.",
+                "zh": "这只小鸡死于被蚊子叮咬。",
+                "related_words": {
+                    "duz": "只",
+                    "gaeqlwg": "小鸡",
+                    "neix": "这",
+                    "dai": "死",
+                    "nyungz": "蚊子"
+                }
+            },
+            {
+                "za": "Go faexlwg neix dai ndit.",
+                "zh": "这棵小树是死于阳光太强。",
+                "related_words": {
+                    "go": "棵",
+                    "faexlwg": "小树",
+                    "neix": "这",
+                    "dai": "死",
+                    "ndit": "阳光"
+                }
+            }
+        ]
+    },
+    {
+        "grammar_description": "壮语的dawz字句与汉语的“把” 字句相当, 都具有将动词所涉及的对象提到动词之前的功能。",
+        "examples": [
+            {
+                "za": "Dawz bonjsaw neix sik bae.",
+                "zh": "把这本书撕了。",
+                "related_words": {
+                    "bonjsaw": "书",
+                    "neix": "这",
+                    "sik": "撕",
+                    "bae": "了"
+                }
+            },
+            {
+                "za": "Dawz aendou gven ndei.",
+                "zh": "把门关好。",
+                "related_words": {
+                    "aendou": "门",
+                    "gven": "关",
+                    "ndei": "好"
+                }
+            }
+        ]
+    }
+]

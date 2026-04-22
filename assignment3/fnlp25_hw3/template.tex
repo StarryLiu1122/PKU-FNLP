@@ -1,0 +1,359 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{dot2texi}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage[pdf]{graphviz}
+\usetikzlibrary{automata,shapes,arrows} 
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{array}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+
+% 代码块基础设置
+\lstset{
+	language=c++,
+	basicstyle=\small\ttfamily,  % <== 在这里设置字体大小和字体类型
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\color{red},
+	numbers=left,
+	numberstyle=\small,
+	stepnumber=1,
+	numbersep=5pt,
+	frame=single,
+	breaklines=true,
+	showstringspaces=false,
+	tabsize=2
+}
+
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Matlab}{
+    language        = matlab,
+    frame           = lines, 
+    basicstyle      = \footnotesize,
+    keywordstyle    = \color{blue},
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{自然语言处理基础}
+\newcommand\hwnumber{3}                  % <-- homework number
+\newcommand\name{刘星云}                 % <-- Name
+\newcommand\ID{2300012297}           % <-- ID
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\name\\\ID}                 
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ \today}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+
+
+
+
+\begin{document}
+
+\section*{2.1. Implement the WordPiece algorithm}
+
+\subsection*{Question (1)}
+
+WordPiece 是一种用于子词级（subword-level）分词的算法，最初由 Google 提出，能够提升自然语言处理中对未登录词（OOV）的处理能力，广泛用于 BERT 等预训练模型中。它的主要思想是从字符级开始，通过贪心地合并频率最高的词片段（subword），构建一个覆盖训练语料的词汇表，从而兼顾词汇覆盖率和泛化能力。
+
+\subsection*{训练阶段原理}
+
+WordPiece训练从一个初始词表开始，该词表包含模型的特殊符号以及所有字符（例如字母）。每个词最初被拆解为字符形式，首字母保留原样，其余字符前加上前缀 \texttt{\#\#} 表示其为词中部分（非开头），例如：
+
+\[
+\text{``word''} \rightarrow \texttt{w}\ \texttt{\#\#o}\ \texttt{\#\#r}\ \texttt{\#\#d}
+\]
+
+接下来算法迭代合并一对子词，根据如下公式评分选择合并对：
+
+\[
+\text{score} = \frac{\text{freq(pair)}}{\text{freq(first)} \times \text{freq(second)}}
+\]
+
+其中：
+\begin{itemize}
+	\item $\text{freq(pair)}$ 表示该对子词对出现的频率；
+	\item $\text{freq(first)}$ 和 $\text{freq(second)}$ 分别表示该对子词各部分的频率；
+\end{itemize}
+
+这个评分机制偏向于合并个体频率较低但联合频率较高的对子词。例如，虽然 \texttt{("un", "\#\#able")} 可能频繁共现，但因两者各自频率较高，最终得分偏低； \texttt{("hu", "\#\#gging")} 可能频繁共现，但因两者各自频率都较低，最终得分会偏高，所以前者得分可能低于后者，后者更可能被合并为 “hugging”。
+
+\vspace{1em}
+
+在这里给出一个简单的例子来说明WordPiece算法的训练阶段：
+
+\textbf{示例：} 假设训练词表如下：
+
+\[
+\begin{array}{ll}
+	\texttt{hug} & 10 \\
+	\texttt{pug} & 5 \\
+	\texttt{pun} & 12 \\
+	\texttt{bun} & 4 \\
+	\texttt{hugs} & 5 \\
+\end{array}
+\]
+
+初始切分如下：
+
+\[
+\begin{array}{ll}
+	\texttt{hug} & \rightarrow \texttt{h}\ \texttt{\#\#u}\ \texttt{\#\#g} \\
+	\texttt{pug} & \rightarrow \texttt{p}\ \texttt{\#\#u}\ \texttt{\#\#g} \\
+	\texttt{pun} & \rightarrow \texttt{p}\ \texttt{\#\#u}\ \texttt{\#\#n} \\
+	\texttt{bun} & \rightarrow \texttt{b}\ \texttt{\#\#u}\ \texttt{\#\#n} \\
+	\texttt{hugs} & \rightarrow \texttt{h}\ \texttt{\#\#u}\ \texttt{\#\#g}\ \texttt{\#\#s} \\
+\end{array}
+\]
+
+初始词表包含：\texttt{["b", "h", "p", "\#\#u", "\#\#g", "\#\#n", "\#\#s"]}
+
+在合并过程中， \texttt{("\#\#g", "\#\#s")} 的得分最高，则添加新子词 \texttt{\#\#gs}，并替换出现处，词汇表变为：\texttt{["b", "h", "p", "\#\#u", "\#\#g", "\#\#n", "\#\#s", "\#\#gs"]}。接下来合并剩下得分最高的 \texttt{("h", "\#\#u")} 成 \texttt{hu}，词汇表变为：\texttt{["b", "h", "p", "\#\#u", "\#\#g", "\#\#n", "\#\#s", "\#\#gs", "hu"]}。依此类推，直到达到指定词表大小。
+
+\subsection*{分词阶段原理}
+
+与 BPE 不同，WordPiece 在分词时不记录合并顺序，而是利用最终的词表对输入词进行贪心匹配：每一步寻找词开头最长的匹配子词。例如：
+\[
+\text{``bugs''} \rightarrow \texttt{b},\ \texttt{\#\#u},\ \texttt{\#\#gs}
+\]
+首先，从词首开始，词表中最长的子词是单独的字符 \texttt{b}，因此我们先分割得到 \texttt{["b", "\#\#ugs"]}。接下来，在子串 \texttt{"\#\#ugs"} 中，词表中最长的子词是 \texttt{"\#\#u"}，继续分割得到 \texttt{["b", "\#\#u", "\#\#gs"]}。最后，\texttt{"\#\#gs"} 也在词表中，因此最终 \texttt{bugs} 的分词结果为 \texttt{["b", "\#\#u", "\#\#gs"]}。
+
+若某部分找不到匹配的子词，则整个词标记为 \texttt{[UNK]}，例如：
+\[
+\text{``mug''} \rightarrow \texttt{[UNK]}
+\]
+
+
+\subsection*{优势}
+
+\begin{itemize}
+	\item 能有效处理未登录词（OOV），增强模型泛化能力。
+	\item 控制词表规模，提升模型效率。
+	\item 保留常见词整体，减少序列长度。
+\end{itemize}
+
+
+\subsection*{Question (3)}
+
+tokenization result:
+\texttt{['n', '\#\#o', '\#\#u', '\#\#s', 'e', '\#\#tud', '\#\#i', '\#\#o', '\#\#n', '\#\#s', 'a', 'l', 'univ', '\#\#e', '\#\#rsi', '\#\#t', '\#\#e', 'd', '\#\#e', 'p', '\#\#e', '\#\#ki', '\#\#n']}
+
+\subsection*{Question (4)}
+
+example text that will result in a token sequence with [UNK]：$'Tsinghua'$
+
+\vspace{1em}
+
+LLaMA 模型使用的是基于字节的 BPE（Byte Pair Encoding）分词器，通常通过 \texttt{SentencePiece} 工具实现。这种分词器的一个重要特点是：
+
+\begin{itemize}
+	\item 它将所有文本视为字节序列进行处理；
+	\item 所有可能的 Unicode 字节序列都可以被编码；
+	\item 因此，任何输入字符串都可以被分解为已有的词片（subword units）；
+	\item \textbf{无需使用} \texttt{[UNK]} （unknown token）来表示无法识别的词。
+\end{itemize}
+
+这与传统分词器（如 WordPiece 或基于词典的分词器）不同，后者如果遇到不在词表中的词汇，就只能返回 \texttt{[UNK]}，从而损失原始信息。而 LLaMA 的分词器能够通过字节级编码方式保证任何输入都能被编码，因此不需要 \texttt{[UNK]}。
+
+
+\section*{2.2. Expand BERT's tokenizer with WordPiece}
+
+\subsection*{Question 1}
+
+\subsection*{Tokenizer 的训练过程}
+
+在本步骤中，我们使用提供的生物医学语料库 $pubmed\_sampled\_corpus.jsonline$ 来训练一个 WordPiece 分词器，并借助 Hugging Face 提供的 tokenizers 工具包完成分词器的构建与训练。
+
+我们首先使用 tokenizers 库中的 Tokenizer 和 WordPieceTrainer 接口，对语料库进行训练。预处理过程中，我们按行为单位读取语料，每行表示一篇文章或段落，然后将其作为训练语料输入分词器。
+
+以下是训练分词器的主要代码框架：
+
+
+\begin{lstlisting}[language=c++]
+tokenizer = Tokenizer(WordPiece(unk_token="[UNK]"))
+tokenizer.pre_tokenizer = Whitespace()
+
+trainer = WordPieceTrainer(
+	vocab_size=100000,
+	special_tokens=["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"]
+)
+
+tokenizer.train(files=["pubmed_sampled_corpus.jsonline"], trainer=trainer)
+tokenizer.save("biomedical_wordpiece_tokenizer.json")
+\end{lstlisting}
+
+\subsection*{训练参数}
+
+训练中使用的主要参数如下：
+\begin{itemize}
+	\item \textbf{词表大小：} 100000
+	\item \textbf{预处理器：} 空格分词（Whitespace）
+	\item \textbf{特殊标记：} \texttt{[PAD]}, \texttt{[UNK]}, \texttt{[CLS]}, \texttt{[SEP]}, \texttt{[MASK]}
+\end{itemize}
+
+\subsection*{词表大小结果}
+
+训练完成后，得到的词表大小为：
+Vocabulary Size=100000
+
+\subsection*{Question 2}
+
+\subsection*{Token Selection Strategy}
+
+为了从 Step 1 中训练得到的 WordPiece 分词器中选取 5000 个 token，实验采用以下策略：
+\begin{enumerate}
+	\item \textbf{词表差异比对}：将训练得到的 tokenizer 的词表与原始的 \texttt{bert-base-uncased} 词表进行对比，筛选出仅出现在新词表中而未出现在原始 BERT 词表中的 token，记为 \texttt{new\_tokens\_only}。
+	\item \textbf{排除冗余 token}：我们过滤掉过短或无实际意义的 token（如仅为一个字符的 token），优先保留医学术语、术语词干等具备语义信息的词汇。
+	\item \textbf{按长度排序}：WordPiece 分词器基于 token 的长度由长到短构建词表，因此实验从 \texttt{new\_tokens\_only} 中选择长度排名前 5000 的 token，作为新增词汇。
+\end{enumerate}
+
+\subsection*{Sampled Domain Tokens}
+
+我们从最终选取的 5000 个新增 token 中随机抽取 50 个进行展示，如下所示：
+
+\begin{quote}
+	\small
+	\texttt{
+		segmentectomy, thromboplastin, translocating, \#\#acetylation, resectability, \#\#ollinearity, nanocomposites, Schistosomiasis, antiretroviral, neurotransmission,\\
+		\#\#ophalangeal, accelerations, intravitreal, polyelectrolyte, deconvolution, neurotypical, neurotransmitter, preconditioning, discoloration, microorganism,\\
+		\#\#Publication, Neurodegenerative, \#\#MedicineClinical, advantageous, Correspondingly, diaphragmatic, corticotropin, Demonstration, \#\#orientation, bronchiectasis,\\
+		\#\#fractionated, Transfection, repolarization, denaturation, Heterogeneous, immunocompromised, unavailability, substitutions, topoisomerases, Neuroradiology,\\
+		mobilisation, reconfigurable, monochromatic, Krishnamurthy, immunosuppressants, norepinephrine, endophthalmitis, multiplicity, developmentally, transesterification
+	}
+\end{quote}
+
+\subsection*{Observations and Patterns}
+
+在随机抽取的 50 个新增领域词汇中，我们观察到如下几个具有代表性的特征：
+
+\begin{itemize}
+	\item \textbf{医学术语密集}: 绝大多数 token 为高度专业化的医学术语，如 \texttt{segmentectomy}（节段切除术）、\texttt{thromboplastin}（促凝血酶原生成物）、\texttt{bronchiectasis}（支气管扩张）等，体现出领域语料中生物医学名词的高频性和专业性。
+	
+	\item \textbf{多为罕见或复合词}: 词表中包含大量复合词或较长结构词，如 \texttt{neurotransmission}、\texttt{immunocompromised}、\texttt{transesterification}，这些词通常在通用语料中出现频率较低，说明模型扩展对特定长词识别能力的增强。
+	
+	\item \textbf{涵盖多种语义层级}: token 涵盖从器官/解剖结构（如 \texttt{diaphragmatic}、\texttt{endophthalmitis}）、分子/药物（如 \texttt{norepinephrine}、\texttt{immunosuppressants}），到疾病（如 \texttt{Schistosomiasis}、\texttt{Neurodegenerative}）的多种语义层级，有助于下游任务中丰富的语义建模。
+	
+	\item \textbf{部分词源于领域特定文本}: 出现了专有名词和人名（如 \texttt{Krishnamurthy}），可能来源于科研作者、药物名或专利等领域特定语料，进一步说明语料来源的专业性和多样性。
+\end{itemize}
+
+总体而言，这些新增 token 能有效弥补原始 BERT 词表在生物医学领域的覆盖不足，增强模型在医学实体识别、关系抽取等下游任务中的语言表示能力。
+
+\subsection*{Question 3}
+
+\subsection*{Tokenized results}
+
+\scriptsize
+\begin{longtable}{|p{0.95\textwidth}|}
+	\hline
+	\textbf{Sample 1} \\
+	\textit{Original Sentence:} \\
+	This study demonstrates Sal inhibits proliferation and induces apoptosis of HCC cells in vitro and in vivo and one potential mechanism is inhibition of Wnt/β-catenin signaling via increased intracellular Ca(2+) levels . \\
+	\textbf{Original BERT tokenizer:} \\
+	this, study, demonstrates, sal, inhibit, \#\#s, proliferation, and, induce, \#\#s, ap, \#\#op, \#\#tosis, of, hc, \#\#c, cells, in, vitro, and, in, vivo, and, one, potential, mechanism, is, inhibition, of, w, \#\#nt, /, β, -, cat, \#\#eni, \#\#n, signaling, via, increased, intra, \#\#cellular, ca, (, 2, +, ), levels, . \\
+	\textbf{Expanded BERT tokenizer:} \\
+	this, study, demonstrates, sal, inhibit, \#\#s, proliferation, and, induce, \#\#s, ap, \#\#op, \#\#tosis, of, hc, \#\#c, cells, in, vitro, and, in, vivo, and, one, potential, mechanism, is, inhibition, of, w, \#\#nt, /, β, -, cat, \#\#eni, \#\#n, signaling, via, increased, intracellular, ca, (, 2, +, ), levels, . \\
+	\hline
+	
+	\textbf{Sample 2} \\
+	\textit{Original Sentence:} \\
+	Furthermore , apart from the comparison of the growth inhibition rate between the low and moderate dosage group at 24 and 72 h which were found to be no significant difference ( P$>$0.05 ) , the comparison f that among the three ZLJ groups appeared to be significant difference ( P$<$0.05 ) . \\
+	\textbf{Original BERT tokenizer:} \\
+	furthermore, ,, apart, from, the, comparison, of, the, growth, inhibition, rate, between, the, low, and, moderate, dos, \#\#age, group, at, 24, and, 72, h, which, were, found, to, be, no, significant, difference, (, p, $>$, 0, ., 05, ), ,, the, comparison, f, that, among, the, three, z, \#\#l, \#\#j, groups, appeared, to, be, significant, difference, (, p, $<$, 0, ., 05, ), . \\
+	\textbf{Expanded BERT tokenizer:} \\
+	furthermore, ,, apart, from, the, comparison, of, the, growth, inhibition, rate, between, the, low, and, moderate, dos, \#\#age, group, at, 24, and, 72, h, which, were, found, to, be, no, significant, difference, (, p, $>$, 0, ., 05, ), ,, the, comparison, f, that, among, the, three, z, \#\#l, \#\#j, groups, appeared, to, be, significant, difference, (, p, $<$, 0, ., 05, ), . \\
+	\hline
+	
+	\textbf{Sample 3} \\
+	\textit{Original Sentence:} \\
+	In a narrow analysis ( cut off : $>$or=2-fold , P $<$or= 0.002 ) , we found 110 transcripts to be differentially expressed representing 107 genes and... \\
+	\textbf{Original BERT tokenizer:} \\
+	in, a, narrow, analysis, (, cut, off, :, $>$, or, =, 2, -, fold, ,, p, $<$, or, =, 0, ., 002, ), ,, we, found, 110, transcripts, to, be, differentially, expressed, representing, 107, genes, and, ... \\
+	\textbf{Expanded BERT tokenizer:} \\
+	in, a, narrow, analysis, (, cut, off, :, $>$, or, =, 2, -, fold, ,, p, $<$, or, =, 0, ., 002, ), ,, we, found, 110, transcripts, to, be, differentially, expressed, representing, 107, genes, and, ... \\
+	\hline
+\end{longtable}
+
+\subsection*{Differences}
+
+从宏观角度来看，原始 BERT 分词器与扩展 BERT 分词器的主要差异在于其对专业术语和复合词的处理策略。例如在 Sample 1 中，扩展分词器能够将“intracellular”作为一个整体词元处理，而原始分词器则将其拆分为“intra”和“\#\#cellular”，这种差异可能在一定程度上影响模型对专业术语的理解精度。
+
+总体来看，扩展分词器对医学、生物等专业领域常见的复合词具有更强的识别和保留能力，更有利于专业语义的表达。而原始分词器在通用语料下的分词策略更为保守，易于泛化。两者在非专业性文本部分的分词基本一致，仅在关键专业词汇的处理上存在微调。因此，扩展分词器在保持通用性能的同时，更适用于需要精准处理专业术语的任务场景。
+
+\subsection*{Compare the average length(in tokens)}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{分词器类型} & \textbf{平均分词长度} \\
+		\hline
+		原始 BERT 分词器 & 67.54 \\
+		扩展 BERT 分词器 & 64.95 \\
+		\hline
+	\end{tabular}
+	\caption{HoC 训练集的平均分词长度比较}
+\end{table}
+
+从表中可以看出，扩展 BERT 分词器的平均分词长度为 64.95，低于原始 BERT 分词器的 67.54。这一结果反映出，在本次扩展词表的构建中，由于采用了基于词长（即优先保留更长的词）的策略，扩展分词器更倾向于保留完整的长词，尤其是生物医学领域的专业术语。
+
+这种策略使得许多原本会被拆分为多个子词的术语（如 ``intracellular''、``catenin'' 等）在分词时得以作为一个整体被识别，减少了额外的子词切分。因此，扩展分词器在这部分数据中的表现是更少的分词数和更大的词汇单元。
+
+
+\subsection*{Question 4}
+
+在本步骤中，模型通过 \texttt{resize\_token\_embeddings} 方法将嵌入矩阵从原始的 30522 个 token 扩展为新的词表大小34702。嵌入维度为 768，则新增参数的数量为 $(34702 - 30522) \times 768 = 3{,}210{,}240$。这些新增参数采用与原始 BERT 相同的初始化策略，即从均值为 0，标准差为 0.02 的正态分布中随机初始化。
+
+\subsection*{Question 5}
+
+\subsection*{模型性能比较}
+
+相比于此前使用原始 BERT 分词器训练得到的模型（准确率为 0.7952，F1为 0.7528），当前模型的性能有所下降，具体指标如下：
+
+\begin{itemize}
+	\item 准确率（Accuracy）：0.7833
+	\item 宏平均 F1 分数（Macro-F1）：0.7191
+	\item 微平均 F1 分数（Micro-F1）：0.7833
+\end{itemize}
+
+\textbf{性能下降的可能原因包括：}
+\begin{enumerate}
+	\item 扩展后的分词器引入了大量新词，但训练语料规模有限，导致许多新增词汇的表示未能充分学习，影响模型泛化能力；
+	\item 新增词汇的词嵌入采用随机初始化，增加了模型训练的难度，可能导致训练初期性能波动或下降；
+	\item 对模型参数和训练超参数未针对扩展后的词表进行重新调优，未充分适应新的词汇分布；
+\end{enumerate}
+
+因此，虽然引入领域专用词表在理论上能够帮助模型更好地理解专业术语，但实际效果依赖于足够的数据支持和更充分的训练策略调整，才能发挥其潜在优势。
+
+\end{document}

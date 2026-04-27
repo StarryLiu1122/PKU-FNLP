@@ -45,19 +45,19 @@ PKU-FNLP/
   </thead>
   <tbody>
     <tr>
-      <td><b>HW 1</b></td>
+      <td><b>assignment 1</b></td>
       <td><b>报告</b></td>
       <td>设计 LLMs 无法正确回答的挑战性问题</td>
       <td>💻 <a href="./assignment1/">代码</a></td>
     </tr>
     <tr>
-      <td><b>HW 2</b></td>
+      <td><b>assignment 2</b></td>
       <td><b>文本分类模型训练</b></td>
       <td>实现并训练两个文本分类模型：log-linear 模型和 BERT 模型</td>
       <td>💻 <a href="./assignment2/">代码</a></td>
     </tr>
     <tr>
-      <td><b>HW 3</b></td>
+      <td><b>assignment 3</b></td>
       <td><b>生物医学领域的文本分类任务</b></td>
       <td>扩展BERT分词器的词汇量并用于生物医学领域的文本分类任务</td>
       <td>💻 <a href="./assignment3/">代码</a></td>

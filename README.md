@@ -46,33 +46,27 @@ PKU-FNLP/
   <tbody>
     <tr>
       <td><b>HW 1</b></td>
-      <td><b>词法分析与文本分类</b></td>
-      <td>实现基于规则与统计的中文分词；应用朴素贝叶斯、逻辑回归进行文本情感分类。</td>
-      <td>💻 <a href="./assignments/hw1/">代码</a></td>
+      <td><b>报告</b></td>
+      <td>设计 LLMs 无法正确回答的挑战性问题</td>
+      <td>💻 <a href="./assignment1/">代码</a></td>
     </tr>
     <tr>
       <td><b>HW 2</b></td>
-      <td><b>序列标注</b></td>
-      <td>实现隐马尔可夫模型 (HMM) 与条件随机场 (CRF)；完成中文命名实体识别 (NER) 任务。</td>
-      <td>💻 <a href="./assignments/hw2/">代码</a></td>
+      <td><b>文本分类模型训练</b></td>
+      <td>实现并训练两个文本分类模型：log-linear 模型和 BERT 模型</td>
+      <td>💻 <a href="./assignment2/">代码</a></td>
     </tr>
     <tr>
       <td><b>HW 3</b></td>
-      <td><b>神经网络语言模型</b></td>
-      <td>实现 N-gram 语言模型与神经网络语言模型 (NNLM)；探索词向量表示 (Word2Vec)。</td>
-      <td>💻 <a href="./assignments/hw3/">代码</a></td>
-    </tr>
-    <tr>
-      <td><b>HW 4</b></td>
-      <td><b>Transformer 与预训练</b></td>
-      <td>实现自注意力机制与 Transformer 编码器；基于预训练模型 (BERT) 进行下游任务微调。</td>
-      <td>💻 <a href="./assignments/hw4/">代码</a></td>
+      <td><b>生物医学领域的文本分类任务</b></td>
+      <td>扩展BERT分词器的词汇量并用于生物医学领域的文本分类任务</td>
+      <td>💻 <a href="./assignment3/">代码</a></td>
     </tr>
     <tr>
       <td><b>Project</b></td>
-      <td><b>期末项目</b></td>
-      <td>综合运用课程所学，完成一个完整的 NLP 应用系统（如机器翻译、问答系统或文本摘要）。</td>
-      <td>💻 <a href="./project/">代码</a></td>
+      <td><b>期末项目：壮语翻译</b></td>
+      <td>综合运用课程所学，完成一个完整的 NLP 应用系统（机器翻译</td>
+      <td>💻 <a href="./assignment4/">代码</a></td>
     </tr>
   </tbody>
 </table>

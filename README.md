@@ -24,10 +24,10 @@
 ```text
 PKU-FNLP/
 ├── 📂 Lecture slides/                # 课程PPT
-├── 📂 assignment1/                   # 报告一：词法分析与文本分类
-├── 📂 assignment2/                   # 作业二：序列标注与 HMM/CRF
-├── 📂 assignment3/                   # 作业三：神经网络语言模型
-├── 📂 assignment4/                   # 项目四：Transformer 与预训练模型     
+├── 📂 assignment1/                   # 报告一：设计挑战性问题
+├── 📂 assignment2/                   # 作业二：文本分类模型训练
+├── 📂 assignment3/                   # 作业三：生物医学领域的文本分类任务
+├── 📂 assignment4/                   # 项目四：壮语翻译
 ├── 📂 quiz/                          # 课程quiz
 └── 📂 参考教材/                  
 ```

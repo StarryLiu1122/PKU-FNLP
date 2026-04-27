@@ -24,10 +24,10 @@
 ```text
 PKU-FNLP/
 ├── 📂 Lecture slides/                # 课程PPT
-├── 📂 assignment1/                   # 作业一：词法分析与文本分类
+├── 📂 assignment1/                   # 报告一：词法分析与文本分类
 ├── 📂 assignment2/                   # 作业二：序列标注与 HMM/CRF
 ├── 📂 assignment3/                   # 作业三：神经网络语言模型
-├── 📂 assignment4/                   # 作业四：Transformer 与预训练模型     
+├── 📂 assignment4/                   # 项目四：Transformer 与预训练模型     
 ├── 📂 quiz/                          # 课程quiz
 └── 📂 参考教材/                  
 ```
@@ -88,10 +88,10 @@ pip install numpy scipy matplotlib torch torchvision transformers scikit-learn j
 
 ### 2. 实验执行
 
-每个作业文件夹（hw1-hw4）中均包含对应的启动脚本。请进入相应目录后运行，例如启动 HW 1 的文本分类实验：
+每个作业文件夹（assignment 1-4）中均包含对应的启动脚本。请进入相应目录后运行，例如启动 assignment 2 的文本分类实验：
 
 ```Bash
-cd assignments/hw1
+cd assignment2
 python text_classification.py
 ```
 

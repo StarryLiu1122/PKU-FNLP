@@ -65,7 +65,7 @@ PKU-FNLP/
     <tr>
       <td><b>Project</b></td>
       <td><b>期末项目：壮语翻译</b></td>
-      <td>综合运用课程所学，完成一个完整的 NLP 应用系统（机器翻译</td>
+      <td>综合运用课程所学，完成一个完整的 NLP 应用系统（机器翻译)</td>
       <td>💻 <a href="./assignment4/">代码</a></td>
     </tr>
   </tbody>

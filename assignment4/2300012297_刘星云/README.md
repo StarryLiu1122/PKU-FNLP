@@ -38,6 +38,11 @@
 pip install -r requirements.txt
 ```
 
+## 📝 Datasets
+
+- https://github.com/luciusssss/ZhuangBench
+- https://github.com/Infinite-set/ZhuangRules
+
 ## 🚀 Quick Start
 
 1.Sub-Task 1: Simple and Controlled
